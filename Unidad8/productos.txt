@@ -1,0 +1,3 @@
+Lapicera,20.5,5
+fibron,15.8,10
+hoja,10,15
