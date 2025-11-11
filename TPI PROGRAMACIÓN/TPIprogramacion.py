@@ -69,7 +69,7 @@ def agregar_pais(archivo_paises):
             with open(archivo_paises, "a") as archivo:  # Ahora abrimos en modo append y escribimos correctamente
                 archivo.write(f"{salto}{nombre},{poblacion},{superficie},{continente}\n")
 
-            print(f"País '{nombre}' agregado correctamente al archivo.")
+            print(f"\nPaís '{nombre}' agregado correctamente al archivo.")
         else:
             print("Población y superficie deben ser números enteros positivos.")
     else:
@@ -150,7 +150,7 @@ def actualizar_pais(archivo_paises, lista_paises):
                 if nueva_poblacion.isdigit() and nueva_superficie.isdigit():
                     pais_a_modificar[1] = int(nueva_poblacion)
                     pais_a_modificar[2] = int(nueva_superficie)
-                    print(f"Población y superficie actualizadas para {pais_a_modificar[0]}")
+                    print(f"\nPoblación y superficie actualizadas para {pais_a_modificar[0]}")
                     cambio_realizado = 1
                 else:
                     print("Ambos valores deben ser números enteros.")
@@ -163,7 +163,7 @@ def actualizar_pais(archivo_paises, lista_paises):
                     for p in lista_paises:
                         archivo.write(f"{p[0]},{p[1]},{p[2]},{p[3]}\n")
 
-                print("El archivo fue actualizado correctamente.")
+                print("\nEl archivo fue actualizado correctamente.")
 
 def buscar_pais(lista_paises):
     nombre_buscado = input("Ingrese el nombre del país a buscar: ").strip().lower()
